@@ -149,13 +149,6 @@ import random
 import re
 import sys
 
-#
-# Complete the 'birthdayCakeCandles' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts INTEGER_ARRAY candles as parameter.
-#
-
 def birthdayCakeCandles(candles):
     # Write your code here
     t=candles[0]
@@ -189,17 +182,6 @@ import os
 import random
 import re
 import sys
-
-#
-# Complete the 'kangaroo' function below.
-#
-# The function is expected to return a STRING.
-# The function accepts following parameters:
-#  1. INTEGER x1
-#  2. INTEGER v1
-#  3. INTEGER x2
-#  4. INTEGER v2
-#
 
 def kangaroo(x1, v1, x2, v2):
     # Write your code here
@@ -241,15 +223,7 @@ import random
 import re
 import sys
 
-#
-# Complete the 'viralAdvertising' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts INTEGER n as parameter.
-#
-
 def viralAdvertising(n):
-    # Write your code here
     r=2
     c=2
     for i in range(n-1):
@@ -276,15 +250,6 @@ import os
 import random
 import re
 import sys
-
-#
-# Complete the 'superDigit' function below.
-#
-# The function is expected to return an INTEGER.
-# The function accepts following parameters:
-#  1. STRING n
-#  2. INTEGER k
-#
 
 def superDigit(n, k):
     # Write your code here
@@ -348,7 +313,7 @@ if __name__ == '__main__':
         
         
         #Finding the percentage
-        if __name__ == '__main__':
+    if __name__ == '__main__':
     n = int(input())
     student_marks = {}
     for _ in range(n):
@@ -369,14 +334,6 @@ import random
 import re
 import sys
 
-#
-# Complete the 'insertionSort1' function below.
-#
-# The function accepts following parameters:
-#  1. INTEGER n
-#  2. INTEGER_ARRAY arr
-#
-
 def insertionSort1(n, arr):
     num_ins=arr[n-1]
     i=n-2
@@ -392,7 +349,7 @@ def insertionSort1(n, arr):
     for j in range(1,n):
                 s+=' '+str(arr[j])
     print(s)        
-if __name__ == '__main__':
+ if __name__ == '__main__':
     n = int(input().strip())
 
     arr = list(map(int, input().rstrip().split()))
@@ -408,14 +365,6 @@ import os
 import random
 import re
 import sys
-
-#
-# Complete the 'insertionSort2' function below.
-#
-# The function accepts following parameters:
-#  1. INTEGER n
-#  2. INTEGER_ARRAY arr
-#
 
 def insertionSort2(n, arr):
     # Write your code here
@@ -442,7 +391,7 @@ if __name__ == '__main__':
     
     
     #sWAP cASE
-    def swap_case(s):
+   def swap_case(s):
     letters=list(s)
     for i in range(len(letters)):
         if letters[i].isupper():
@@ -464,22 +413,14 @@ if __name__ == '__main__':
   
   
   #What's Your Name?
-  # Complete the 'print_full_name' function below.
-#
-# The function is expected to return a STRING.
-# The function accepts following parameters:
-#  1. STRING first
-#  2. STRING last
-#
 
 def print_full_name(first, last):
-    # Write your code here
     string='Hello '+first+' '+last+'! You just delved into python.'
     print(string)
     
     
     #Mutations
-    def mutate_string(string, position, character):
+   def mutate_string(string, position, character):
     string_mod=string[:position]+character+string[(position+1):]
     return string_mod
   
@@ -488,8 +429,6 @@ def print_full_name(first, last):
   def count_substring(string, sub_string):
     count=0
     i=0
-    #string=string.upper()
-    #sub_string=sub_string.upper()
     if (len(string)-len(sub_string))==0:
         j=0
         boolean=True
@@ -541,8 +480,6 @@ def print_full_name(first, last):
     
     
     #Text Alignment
-    #Replace all ______ with rjust, ljust or center. 
-
 thickness = int(input()) #This must be an odd number
 c = 'H'
 
@@ -578,7 +515,7 @@ for i in range(thickness):
   
   
   #Designer Door Mat
-  # Enter your code here. Read input from STDIN. Print output to STDOUT
+ 
 N, M = map(int, input().split())
 core='.|.'
 result=core.center(M,'-')
@@ -596,7 +533,6 @@ print(result)
 
 #String Formatting
 def print_formatted(number):
-    # your code goes here
     distance=len(str(bin(number))[2:])+1
     for i in range(1,n+1):
         print((str(i)).rjust(distance-1)+(str(oct(i))[2:]+(str(hex(i).upper())[2:]+(str(bin(i))[2:]).rjust(distance)).rjust(distance*2)).rjust(distance*3))
@@ -606,7 +542,6 @@ def print_formatted(number):
   #Alphabet Rangoli
   import string
 def print_rangoli(size):
- # your code goes here
  alphabet=string.ascii_lowercase #2*(n-1)*2+1
  result_up=alphabet[size-1].center((size-1)*4+1,'-')
  if size==1:
@@ -628,7 +563,6 @@ def print_rangoli(size):
   
   
   #Capitalize!
-  # Complete the solve function below.
 def solve(s):
    letters=[s[0].upper()]
    for i in range(1,len(s)):
@@ -644,7 +578,6 @@ def solve(s):
 
 #The Minion Game
 def minion_game(string):
-    # your code goes here
     vowels={'A','E','I','O','U'}
     n=len(string)
     count_consonants=0
@@ -663,8 +596,7 @@ def minion_game(string):
         
         
         #Merge the Tools!
-        def merge_the_tools(string, k):
-    # your code goes here
+   def merge_the_tools(string, k):
     len_substring=round(len(string)/k)
     for i in range(len_substring):
         substring_t=list(string[i*k:(i+1)*k])
@@ -686,15 +618,13 @@ def minion_game(string):
         
         
         #Introduction to Sets
-        def average(array):
-    # your code goes here
+   def average(array):
     distinct_h=list(set(arr))
     average=sum(distinct_h)/len(distinct_h)
     return "{:.3f}".format(average)
   
   
   #Symmetric Difference
-  # Enter your code here. Read input from STDIN. Print output to STDOUT
 size_1=int(input())
 set_1=set(map(int,input().split()))
 size_2=int(input())
@@ -705,7 +635,6 @@ for i in sorted(sym_diff):
     
     
     #No Idea!
-    # Enter your code here. Read input from STDIN. Print output to STDOUT
 n_m=list(map(int,input().split( )))
 array=list(map(int,input().split()))
 set_A=set(map(int,input().split()))
@@ -743,7 +672,6 @@ print(sum(list(s)))
 
 
 #Set .union() Operation
-# Enter your code here. Read input from STDIN. Print output to STDOUT
 english=int(input())
 roll_num_en=set(map(int,input().split( )))
 french=int(input())
